@@ -1,6 +1,6 @@
 from os import environ
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy 
+from flask_sqlalchemy import SQLAlchemy
  
 def create_app(config_overrides=None): 
    app = Flask(__name__) 
