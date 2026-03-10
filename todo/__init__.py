@@ -21,6 +21,7 @@ def create_app(config_overrides=None):
  
    # Register the blueprints 
    from todo.views.routes import api 
-   app.register_blueprint(api) 
+   app.register_blueprint(api, url_prefix='/api/v1')
+
  
    return app
